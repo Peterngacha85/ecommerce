@@ -1,10 +1,12 @@
 .products-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
     margin: 0 auto;
     max-width: 1200px;
 }
+
 
 .shop-title{
     font-size: 30px;

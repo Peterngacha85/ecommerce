@@ -2,7 +2,6 @@
     background-color: #581C87;
     border: none;
     color: white;
-    padding: 15px 32px;
     margin: 10px;
     text-align: center;
     text-decoration: none;
@@ -13,4 +12,7 @@
 }
 .button:hover{
     background-color: #C026D3;
+}
+button.button{
+    padding: 10;
 }
