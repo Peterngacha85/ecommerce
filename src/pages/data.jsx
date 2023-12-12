@@ -159,7 +159,7 @@ const productData = [
       id: 27,
       name: "Security Camera System",
       price: 129.99,
-      image: "/public/images/Home Security Camera System.jpeg",
+      image: "images/Security Camera System.jpeg",
     },
     {
       id: 28,
