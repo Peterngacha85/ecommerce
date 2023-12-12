@@ -1,0 +1,35 @@
+.header{
+    width: 100dvw;
+    height: 10svh;
+    color: #fff;
+    background: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    cursor: pointer;
+}
+.logo{
+    width: 50%;
+    font-size: 22px;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+.shop-cart{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.shop-cart :nth-child(1){
+    padding: 0 8%;
+    font-size: 20px;
+
+}
+.shop-cart :nth-child(2){
+    padding: 0 8%;
+    margin-left: 10px;
+    font-size: 20px;
+    
+}
