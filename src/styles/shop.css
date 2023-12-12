@@ -1,0 +1,16 @@
+.products-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.shop-title{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 60px 0 30px 0;
+    text-transform: uppercase;
+    color: #C026D3;
+}
