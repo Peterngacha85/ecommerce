@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/button.css'
 
 const Button = ({handleAddToCart, test}) => {
+  const [itemAdded, setItemAdded] = useState(0)
+
    handleAddToCart = () => {
-    alert(`${test} Added to cart`)
-    console.log(`${test} Added to cart`)
+    setItemAdded(itemAdded + 1)
+
   }
   return (
-    <button className='button' onClick={handleAddToCart}>Add to cart</button>
+    <button className='button' onClick={handleAddToCart}>Add to cart {itemAdded > 0 && `(${itemAdded})`}</button>
   )
 }
 
