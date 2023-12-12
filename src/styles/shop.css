@@ -4,8 +4,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin-top: 10svh; */
+    /* margin-top: 20svh; */
     background-color:#FAF5FF;
+    /* height: 90svh; */
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
 
 }
 .products-container{
