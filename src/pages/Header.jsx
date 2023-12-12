@@ -4,19 +4,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 
-const Header = () => {
+const Header = ({setShow}) => {
   return (
     <div className='header'>
       <div className='logo'>
         <h5>LOGO</h5>
       </div>
       <div className='search-bar'>
-        {/* <input type='text' placeholder='Search...' />
-        <button>Search</button> */}
       </div>
       <div className='shop-cart'>
-        <h5>SHOP</h5>
-        <h5><i className="bi bi-cart-fill"></i></h5>
+        <h5 onClick={()=>setShow(true)}>SHOP</h5>
+        <h5 onClick={()=>setShow(false)}><i className="bi bi-cart-fill"></i></h5>
       </div>
     </div>
   );
