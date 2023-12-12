@@ -1,9 +1,13 @@
 import React from 'react'
 import '../styles/button.css'
 
-const Button = () => {
+const Button = ({handleAddToCart, test}) => {
+   handleAddToCart = () => {
+    alert(`${test} Added to cart`)
+    console.log(`${test} Added to cart`)
+  }
   return (
-    <button className='button'>Add to cart</button>
+    <button className='button' onClick={handleAddToCart}>Add to cart</button>
   )
 }
 

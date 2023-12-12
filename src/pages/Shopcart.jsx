@@ -3,6 +3,7 @@ import "../styles/shopcart.css";
 import Button from "../components/Button";
 
 const Shopcart = ({ data }) => {
+
   return (
     <div className="product">
       <div className="product-image">
@@ -13,7 +14,7 @@ const Shopcart = ({ data }) => {
         <h4 className="price">$ {data.price}</h4>
         <p>{data.description}</p>
       </div>
-      <Button />
+      <Button handleAddToCart test={data.name}/>
     </div>
   );
 };
