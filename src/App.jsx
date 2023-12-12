@@ -17,7 +17,7 @@ function App() {
           <Shop />
         </div>
       ) : (
-        <div className="shop-container">
+        <div className="cart-container">
           <Cart  />
         </div>
       )}
