@@ -13,12 +13,14 @@
 
 }
 .products-container{
+    width: 100vw;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     justify-items: center;
-    margin: 0 auto;
-    max-width: 1200px;
+    margin: 0 40px;
+    max-width: 100%;
 }
 
 
@@ -42,4 +44,9 @@
         font-size: 24px;
         margin: 40px 0 20px 0;
     }
+}
+.bi.bi-cart-fill::before{
+    font-size: 50px;
+    margin-right: 30px;
+    
 }
