@@ -5,6 +5,13 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 
 const Header = ({setShow}) => {
+  const handleShow = (show) => {
+    return (e) => {
+      console.log("show", e);
+      e.preventDefault();
+      setShow(show);
+    };
+  };
   return (
     <div className='header'>
       <div className='logo'>
@@ -13,8 +20,8 @@ const Header = ({setShow}) => {
       <div className='search-bar'>
       </div>
       <div className='shop-cart'>
-        <h5 onClick={()=>setShow(true)}>SHOP</h5>
-        <h5 onClick={()=>setShow(false)}><i className="bi bi-cart-fill"></i></h5>
+        <h5 onClick={handleShow(true)}>SHOP</h5>
+        <h5 onClick={handleShow(false)}><i className="bi bi-cart-fill"></i></h5>
       </div>
     </div>
   );
