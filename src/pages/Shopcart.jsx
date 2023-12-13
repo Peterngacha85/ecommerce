@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/shopcart.css";
 import Button from "../components/Button";
 
 const Shopcart = ({ data }) => {
+  useEffect(() => {
+    console.log("Shopcart component mounted or updated");
+    return () => {
+      console.log("Shopcart component will unmount");
+    };
+  }, []); // The empty dependency array ensures that this effect runs once on mount
 
   return (
     <div className="product">
